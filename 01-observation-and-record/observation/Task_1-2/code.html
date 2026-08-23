@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Styled Webpage</title>
+
+<style>
+/* ===== General Styling ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(to right,#74ebd5,#9face6);
+    color:#333;
+}
+
+/* ===== Header ===== */
+header{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:20px;
+    text-shadow:2px 2px 5px black;
+}
+
+/* ===== Navigation ===== */
+nav{
+    background:#34495e;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:yellow;
+    background:#1abc9c;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+/* ===== Canvas Section ===== */
+.canvas-section{
+    text-align:center;
+    margin:30px;
+}
+
+canvas{
+    border:3px solid black;
+    background:white;
+    box-shadow:5px 5px 10px gray;
+}
+
+/* ===== Cards ===== */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:30px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    padding:20px;
+    border:2px solid #3498db;
+    border-radius:15px;
+    box-shadow:5px 5px 10px gray;
+    text-align:center;
+}
+
+.card h3{
+    font-family:Georgia;
+    color:#2c3e50;
+}
+
+.card p{
+    margin-top:10px;
+    font-size:16px;
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#3498db;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#2ecc71;
+    transform:scale(1.1);
+}
+
+/* ===== Footer ===== */
+footer{
+    background:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+    text-shadow:2px 2px 5px black;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>My Styled Webpage</h1>
+    <p>HTML5 Canvas and CSS3 Styling Demo</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section class="canvas-section">
+    <h2>HTML5 Canvas</h2>
+    <br>
+    <canvas id="myCanvas" width="600" height="300"></canvas>
+</section>
+
+<section class="container">
+
+<div class="card">
+<h3>Card One</h3>
+<p>This card demonstrates borders, padding, margins, rounded corners and shadow effects.</p>
+<button>Read More</button>
+</div>
+
+<div class="card">
+<h3>Card Two</h3>
+<p>CSS3 makes webpages attractive using gradients, hover effects, fonts and colors.</p>
+<button>Learn More</button>
+</div>
+
+<div class="card">
+<h3>Card Three</h3>
+<p>HTML5 Canvas allows drawing graphics directly inside a webpage using JavaScript.</p>
+<button>Explore</button>
+</div>
+
+</section>
+
+<footer>
+    © 2026 My Styled Webpage | All Rights Reserved
+</footer>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+/* Rectangle */
+ctx.fillStyle="blue";
+ctx.fillRect(40,40,150,80);
+
+/* Circle */
+ctx.beginPath();
+ctx.arc(300,80,40,0,2*Math.PI);
+ctx.fillStyle="red";
+ctx.fill();
+
+/* Line */
+ctx.beginPath();
+ctx.moveTo(420,40);
+ctx.lineTo(550,150);
+ctx.strokeStyle="green";
+ctx.lineWidth=4;
+ctx.stroke();
+
+/* Name Text */
+ctx.font="28px Arial";
+ctx.fillStyle="purple";
+ctx.fillText("vijayasri",220,220);
+
+</script>
+
+</body>
+</html>

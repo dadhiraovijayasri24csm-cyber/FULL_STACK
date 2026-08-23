@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Information Portal</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>College Information Portal</h1>
+
+        <nav>
+            <a href="#about">About</a> |
+            <a href="#students">Students</a> |
+            <a href="#registration">Registration</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- About College -->
+    <section id="about">
+
+        <article>
+
+            <h2>About Our College</h2>
+
+            <p>
+                Welcome to <b>ANITS Engineering College</b>.
+                Our college provides
+                <i>quality education</i> and encourages
+                <u>innovation</u>.
+            </p>
+
+            <p>
+                Water Formula: H<sub>2</sub>O <br>
+                Einstein Equation: E = mc<sup>2</sup>
+            </p>
+
+        </article>
+
+    </section>
+
+    <hr>
+
+    <!-- Lists -->
+    <section>
+
+        <h2>Courses Offered (Ordered List)</h2>
+
+        <ol>
+            <li>Computer Science Engineering</li>
+            <li>Electronics Engineering</li>
+            <li>Mechanical Engineering</li>
+            <li>Civil Engineering</li>
+        </ol>
+
+        <h2>Facilities (Unordered List)</h2>
+
+        <ul>
+            <li>Library</li>
+            <li>Computer Labs</li>
+            <li>Hostel</li>
+            <li>Sports Ground</li>
+        </ul>
+
+    </section>
+
+    <hr>
+
+    <!-- Hyperlinks -->
+    <section>
+
+        <h2>Useful Links</h2>
+
+        <a href="https://www.google.com" target="_blank">Google</a><br><br>
+
+        <a href="https://www.yourcollege.edu" target="_blank">
+            College Website
+        </a>
+
+    </section>
+
+    <hr>
+
+    <!-- Images -->
+    <section>
+
+        <h2>College Images</h2>
+
+        <!-- Replace logo.png with your image -->
+        <img src="logo.png"
+             alt="College Logo"
+             width="150">
+
+        <br><br>
+
+        <!-- Replace college.jpg with your image -->
+        <img src="college.jpg"
+             alt="College Campus"
+             width="400">
+
+    </section>
+
+    <hr>
+
+    <!-- Student Table -->
+    <section id="students">
+
+        <h2>Student Details</h2>
+
+        <table border="1" cellpadding="10">
+
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Email</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>CSE</td>
+                <td>rahul@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Anjali</td>
+                <td>ECE</td>
+                <td>anjali@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>103</td>
+                <td>Kiran</td>
+                <td>EEE</td>
+                <td>kiran@gmail.com</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <!-- Registration Form -->
+    <section id="registration">
+
+        <h2>Student Registration Form</h2>
+
+        <form>
+
+            <label>Name:</label><br>
+            <input type="text" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" required><br><br>
+
+            <label>Password:</label><br>
+            <input type="password"><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date"><br><br>
+
+            <label>Age:</label><br>
+            <input type="number" min="16" max="30"><br><br>
+
+            <label>Favorite Color:</label><br>
+            <input type="color"><br><br>
+
+            <label>Programming Skill:</label><br>
+            <input type="range" min="0" max="100"><br><br>
+
+            <label>Gender:</label><br>
+
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+
+            <br><br>
+
+            <label>Hobbies:</label><br>
+
+            <input type="checkbox"> Reading
+            <input type="checkbox"> Sports
+            <input type="checkbox"> Music
+
+            <br><br>
+
+            <label>Branch:</label><br>
+
+            <select>
+
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+
+            </select>
+
+            <br><br>
+
+            <label>Comments:</label><br>
+
+            <textarea rows="5" cols="40"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Submit">
+
+            <input type="reset" value="Reset">
+
+        </form>
+
+    </section>
+
+    <hr>
+
+    <!-- Audio -->
+    <section>
+
+        <h2>College Anthem</h2>
+
+        <audio controls>
+            <source src="anthem.mp3" type="audio/mpeg">
+            Your browser does not support audio.
+        </audio>
+
+    </section>
+
+    <hr>
+
+    <!-- Video -->
+    <section>
+
+        <h2>College Introduction Video</h2>
+
+        <video width="500" controls>
+
+            <source src="college.mp4" type="video/mp4">
+
+            Your browser does not support video.
+
+        </video>
+
+    </section>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 ANITS Engineering College | All Rights Reserved
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
