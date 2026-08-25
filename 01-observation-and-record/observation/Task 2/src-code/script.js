@@ -1,70 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    margin: 0;
-    padding: 40px;
+// Create Student class
+class Student {
+    constructor(name, rollNumber, department, cgpa) {
+        this.name = name;
+        this.rollNumber = rollNumber;
+        this.department = department;
+        this.cgpa = cgpa;
+    }
 }
 
-.container {
-    width: 450px;
-    margin: auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
+// Select the button and profile container
+const createProfileButton = document.getElementById("createProfile");
+const studentProfile = document.getElementById("studentProfile");
 
-h1 {
-    text-align: center;
-    margin-bottom: 25px;
-}
+// Add event listener to the button
+createProfileButton.addEventListener("click", function () {
 
-.form {
-    display: flex;
-    flex-direction: column;
-}
+    // Get values from input fields
+    const name = document.getElementById("name").value;
+    const rollNumber = document.getElementById("rollNumber").value;
+    const department = document.getElementById("department").value;
+    const cgpa = document.getElementById("cgpa").value;
 
-label {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
+    // Create Student object
+    const student = new Student(
+        name,
+        rollNumber,
+        department,
+        cgpa
+    );
 
-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 15px;
-}
+    // Clear previous profile
+    studentProfile.innerHTML = "";
 
-button {
-    margin-top: 20px;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
+    // Create profile div dynamically
+    const profile = document.createElement("div");
+    profile.className = "profile";
 
-button:hover {
-    background-color: #555;
-}
+    // Create heading
+    const heading = document.createElement("h2");
+    heading.textContent = "Student Profile";
 
-.profile {
-    margin-top: 25px;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #f8f8f8;
-    border-left: 5px solid #333;
-}
+    // Create paragraphs
+    const namePara = document.createElement("p");
+    namePara.textContent = "Name : " + student.name;
 
-.profile h2 {
-    margin-top: 0;
-}
+    const rollPara = document.createElement("p");
+    rollPara.textContent = "Roll No : " + student.rollNumber;
 
-.profile p {
-    font-size: 16px;
-    margin: 10px 0;
-}
+    const departmentPara = document.createElement("p");
+    departmentPara.textContent = "Department : " + student.department;
+
+    const cgpaPara = document.createElement("p");
+    cgpaPara.textContent = "CGPA : " + student.cgpa;
+
+    // Add elements to profile
+    profile.appendChild(heading);
+    profile.appendChild(namePara);
+    profile.appendChild(rollPara);
+    profile.appendChild(departmentPara);
+    profile.appendChild(cgpaPara);
+
+    // Add profile to webpage
+    studentProfile.appendChild(profile);
+});
