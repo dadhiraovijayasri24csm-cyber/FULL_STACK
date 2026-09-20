@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Demonstration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        .demo-box {
+            width: 500px;
+            padding: 20px;
+            border: 1px solid #999;
+        }
+
+        #message {
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        #demoImage {
+            display: block;
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="demo-box">
+
+        <h1 id="heading">DOM Demonstration</h1>
+
+        <p id="status">Status: Original DOM</p>
+
+        <p id="message">
+           Content on Content Creation
+
+        Content creation is the process of developing and sharing valuable, relevant, and engaging material to connect with a specific audience. It can take many forms—such as articles, videos, podcasts, infographics, or social media posts—and<br 
+        serves purposes like educating, entertaining, or inspiring people. Effective content creation involves understanding your audience’s needs, planning strategically, and delivering information in a clear and creative way. In today’s <br>
+        digital world, it plays a vital role in building brand awareness, fostering trust, and driving meaningful engagement. When done consistently and thoughtfully, content creation becomes a powerful tool for communication and growth.
+        </p>
+
+        <img
+            id="demoImage"
+            src="https://t3.ftcdn.net/jpg/01/38/95/08/360_F_138950802_xchwSRWa3cnYi60cyZdXWQR3u7O66FUt.jpg"
+            alt="Original Image"
+            width="200"
+        >
+
+        <p id="attributeStatus">
+            Image alt attribute: Original Image
+        </p>
+
+        <button id="changeButton">
+            Start DOM Changes
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
